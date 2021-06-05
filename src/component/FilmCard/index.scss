@@ -1,0 +1,85 @@
+.singleFilmContainer {
+    width: 150px;
+    height: 310px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+}
+
+.progressContainer {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: -16px;
+    margin-left: 10px;
+}
+
+.filmImg {
+    width: 150px;
+    height: 215px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filmTitle {
+    font-weight: 700;
+    color: #000;
+    margin-top: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.filmTitle:hover {
+    color: #00aede;
+}
+.filmDate {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.threeDotsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 120px;
+    border-radius: 25px;
+    margin-top: 7px;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    background-color: rgba(220, 220, 220, 0.7);
+}
+
+.threeDotsDiv:hover {
+    background-color: #44d5fd;
+}
+@media screen and (max-width: 1200px) {
+    .filmsContainer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .filmsContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .filmsContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .filmsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,67 @@
+.navigation-bar {
+    display: flex;
+    width: 100%;
+    height: 64px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #032541;
+}
+
+.navigation-bar-segment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-bar-segment span {
+    margin: 0px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    cursor: pointer;
+}
+
+.mainLogo {
+    width: 154px;
+    height: 20px;
+    margin-left: 40px;
+    margin-right: 8px;
+    object-fit: contain;
+}
+
+.languageOptions {
+    margin: 0px 10px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-size: 11px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.plusIcon {
+    color: white;
+    margin: 0px 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.plusIcon:hover {
+    color: #00aede;
+}
+
+.searchIcon {
+    color: #00aede;
+    margin-left: 10px;
+    margin-right: 40px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.searchIcon:hover {
+    color: #007798;
+}

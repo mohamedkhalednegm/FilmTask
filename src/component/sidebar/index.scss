@@ -1,0 +1,39 @@
+.sideBarContainer {
+    width: 18%;
+    min-width: 260px;
+    margin-left: 40px;
+}
+.currentType {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 1.8em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebarOption {
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 3px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 13px;
+    padding-right: 13px;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sidebarSearchDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    border-radius: 10px;
+    background-color: rgb(235, 235, 235);
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+}
