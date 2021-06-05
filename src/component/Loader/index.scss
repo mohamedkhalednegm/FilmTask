@@ -1,0 +1,116 @@
+@keyframes lds-eclipse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes lds-eclipse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.lds-eclipse {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lds-eclipse div {
+  position: absolute;
+  -webkit-animation: lds-eclipse 1s linear infinite;
+  animation: lds-eclipse 1s linear infinite;
+  width: 160px;
+  height: 160px;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px 0 0 #0078fc;
+  -webkit-transform-origin: 80px 82px;
+  transform-origin: 80px 82px;
+}
+.lds-eclipse {
+  width: 70px !important;
+  height: 70px !important;
+  -webkit-transform: translate(-35px, -35px) scale(0.35) translate(35px, 35px);
+  transform: translate(-35px, -35px) scale(0.35) translate(35px, 35px);
+}
+/////////////////////////////////////////////////////////////
+.loaderSpan {
+  position: absolute;
+  z-index: 5;
+  margin-left: -50px;
+  margin-top: -15px;
+  opacity: 1;
+  /* animation: cssAnimation 0.5s 1s forwards; */
+  background-color: rgb(255, 255, 255);
+}
+
+.loaderSelectSpan {
+  position: absolute;
+  z-index: 5;
+  margin-left: 60%;
+  margin-bottom: 15px;
+}
+
+.loaderDateSpan {
+  position: absolute;
+  z-index: 5;
+  margin-left: 70%;
+  margin-bottom: 10px;
+}
+
+.checkMark {
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+  /* animation: cssAnimation 0.5s 1s forwards; */
+  opacity: 1;
+}
+.savingDiv {
+  font-size: 12px;
+  color: #0078fc;
+  margin-bottom: -6px;
+  background-color: #ededed;
+  border-radius: 4px;
+  padding: 2px;
+  z-index: 3;
+}
+.success_errorDiv {
+  font-size: 12px;
+  color: #0078fc;
+  margin-bottom: -9px;
+  background-color: #ededed;
+  border-radius: 4px;
+  padding: 2px;
+  z-index: 3;
+}
+
+.flexCentered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* @keyframes cssAnimation {
+  to {
+    opacity: 0;
+  }
+} */

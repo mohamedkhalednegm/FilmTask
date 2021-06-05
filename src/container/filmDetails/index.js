@@ -14,6 +14,7 @@ import { connect } from "react-redux";
 import { filmActions } from "../../actions/film.action";
 import styled from "styled-components";
 import FilmInfo from "../../component/FilmInfo";
+import Loader from "../../component/Loader/index"
 class FilmDetails extends Component {
   constructor(props) {
     super(props);
@@ -37,7 +38,7 @@ class FilmDetails extends Component {
     &:after {
       content: "";
       background-image: url(https://image.tmdb.org/t/p/w500${this.props.location
-        .state});
+      .state});
       background-size: cover;
       background-position: center;
       opacity: 0.9;
@@ -243,7 +244,7 @@ class FilmDetails extends Component {
                         src={
                           elm.profile_path
                             ? "https://image.tmdb.org//t/p/w500" +
-                              elm.profile_path
+                            elm.profile_path
                             : null
                         }
                         class="castImg"
@@ -269,7 +270,11 @@ class FilmDetails extends Component {
           />
         </div>
       </>
-    ) : null;
+    ) :
+      <div className="loaderDiv">
+        <Loader />
+        <span>Loading...</span>
+      </div>
   }
 }
 
